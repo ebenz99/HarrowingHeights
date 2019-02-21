@@ -26,3 +26,17 @@ div.heading {
   width: 100%;
   /*background-color: powderblue;*/
 }
+
+div.mbody {
+  height = 100px;
+  width: 100%;
+  text-align: center;
+}
+
+a.dlink {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  font-family: sans-serif;
+  font-style: bold;
+}
