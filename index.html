@@ -1,13 +1,38 @@
 <!DOCTYPE html>
 <html>
-<body>
-
-<form action="/action_page.php">
-Password: <input type="text" name="Password" value=""><br>
-<input type="submit" value="Submit">
-</form>
-
-<p>Click the "Submit" button and the form-data will be sent to a page on the server called "/action_page.php".</p>
-
-</body>
+<!--<script>
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x != "cool") {
+    alert("Wrong Password");
+    return false;
+  }
+  else {
+  	window.location.href = 'splashpage.html';
+  	return true;
+  }
+}
+</script>-->
+<script>
+function validateForm() {
+  alert("hi");
+  return true;
+}
+</script>
+  <body class = "index">
+  	<link rel="stylesheet" href="style.css">
+	<!--<form name="myForm" onreset="return validateForm()" method="post">
+	  Name: <input type="password" name="fname">
+	  <input type="reset" value="Submit">
+	</form>-->
+	<div class="spacer">
+		<p></p>
+	</div>
+	<div>
+		<form onreset='return validateForm()'>
+		  H:<input type="text" name="fname">
+		  <input type='reset' value="Submit">
+		</form>
+	</div>
+  </body>
 </html>
