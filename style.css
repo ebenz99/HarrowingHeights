@@ -83,7 +83,7 @@ div.spacer {
   width: 280px;
   border-color: #2ecc71;
 }
-.auth input[type = "submit"]{
+.auth input[type = "reset"]{
   border:0;
   background: none;
   display: block;
