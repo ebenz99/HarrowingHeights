@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<!--<script>
+<script>
 function validateForm() {
   var x = document.forms["myForm"]["fname"].value;
   if (x != "cool") {
@@ -12,13 +12,8 @@ function validateForm() {
   	return true;
   }
 }
-</script>-->
-<script>
-function validateForm() {
-  alert("hi");
-  return true;
-}
 </script>
+
   <body class = "index">
   	<link rel="stylesheet" href="style.css">
 	<!--<form name="myForm" onreset="return validateForm()" method="post">
@@ -29,7 +24,7 @@ function validateForm() {
 		<p></p>
 	</div>
 	<div>
-		<form onreset='return validateForm()'>
+		<form name='myForm' onreset='return validateForm()'>
 		  <input type="text" name="fname">
 		  <input type='reset' value="Submit">
 		</form>
