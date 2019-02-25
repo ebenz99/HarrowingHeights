@@ -16,17 +16,15 @@ function validateForm() {
 
   <body class = "index">
   	<link rel="stylesheet" href="style.css">
-	<!--<form name="myForm" onreset="return validateForm()" method="post">
-	  Name: <input type="password" name="fname">
-	  <input type="reset" value="Submit">
-	</form>-->
 	<div class="spacer">
 		<p></p>
 	</div>
 	<div>
-		<form name='myForm' onreset='return validateForm()'>
-		  <input type="text" name="fname">
-		  <input type='reset' value="Submit">
+		<form name='myForm' class="box" onreset='return validateForm()' method="post">
+		  <h1>Login</h1>
+		  <input type="text" name="" placeholder="Username">
+		  <input type="password" name="fname" placeholder="Password">
+		  <input type='reset' name="" value="Login">
 		</form>
 	</div>
   </body>
