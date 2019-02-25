@@ -97,4 +97,7 @@ div.spacer {
   transition: 0.25s;
   cursor: pointer;
 }
+.auth input[type = "reset"]:hover{
+  background-color: #2ecc71;
+}
 
