@@ -1,9 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <body>
-    <link rel="stylesheet" href="style.css">
-    <div class="heading">
-    	   <h1 class="main">Harrowing Heights</h1>
-    </div>
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x != "cool") {
+    alert("Wrong Password");
+    return false;
+  }
+  else {
+  	window.location.href = 'splashpage.html';
+  	return true;
+  }
+}
+</script>
+
+  <body class = "index">
+  	<link rel="stylesheet" href="style.css">
+	<div class="spacer">
+		<p></p>
+	</div>
+	<div>
+		<form name='myForm' class="auth" onreset='return validateForm()' method="post">
+		  <h1>Login</h1>
+		  <input type="text" name="" placeholder="Username">
+		  <input type="password" name="fname" placeholder="Password">
+		  <input type='reset' name="" value="Submit">
+		</form>
+	</div>
   </body>
 </html>

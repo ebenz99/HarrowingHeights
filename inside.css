@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+body {
+	margin: 0;
+	background: #222;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+}
+
+.container {
+  margin: 0px;
+  padding-bottom:0px;
+}
+
+header {
+  background: #98b7d6;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+}
+
+nav {
+  float: center;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  text-align: center;
+  padding-top: 23px;
+  width: 10%;
+  margin-left: 12%;
+  position: relative;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+div.restOfPage {
+  float: top;
+  height: 100%;
+  background-image:url("scroller.gif");
+  background-repeat: no-repeat;
+  margin-left: 10%;
+}
+
+p {
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 50px;
+  height: 50px;
+  position: relative;
+  top: 100px;
+  color:white; 
+  margin-top: 0px;
+  margin-right: 10%;
+  padding-top: 0px;
+
+}
+
+/*div.bar {
+  background-color: #222;
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 50px;
+  height: 50px;
+  position: relative;
+  top: 100px;
+  color:white; 
+}*/
