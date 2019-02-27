@@ -7,7 +7,8 @@ body {
 }
 
 .container {
-	margin: 0 auto;
+  margin: 0px;
+  padding-bottom:0px;
 }
 
 header {
@@ -71,3 +72,36 @@ nav a::before {
 nav a:hover::before {
   width: 100%;
 }
+
+div.restOfPage {
+  float: top;
+  height: 100%;
+  background-image:url("scroller.gif");
+  background-repeat: no-repeat;
+  margin-left: 10%;
+}
+
+p {
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 50px;
+  height: 50px;
+  position: relative;
+  top: 100px;
+  color:white; 
+  margin-top: 0px;
+  margin-right: 10%;
+  padding-top: 0px;
+
+}
+
+/*div.bar {
+  background-color: #222;
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 50px;
+  height: 50px;
+  position: relative;
+  top: 100px;
+  color:white; 
+}*/
