@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
 body {
 	margin: 0;
 	background: #222;
-	font-family: 'Work Sans', sans-serif;
-	font-weight: 800;
+	font-family: 'Shadows Into Light';
 }
 
 .container {
@@ -76,21 +75,22 @@ nav a:hover::before {
 div.restOfPage {
   float: top;
   height: 100%;
-  background-image:url("scroller.gif");
+  /*width: 100%;*/
+  background-size: cover;
+  background-image:url("mountains.png");
   background-repeat: no-repeat;
-  margin-left: 10%;
 }
 
 p {
   text-align: center;
-  font-family: 'Work Sans', sans-serif;
-  font-size: 50px;
+  font-family: 'Shadows Into Light';
+  font-size: 100px;
   height: 50px;
   position: relative;
   top: 100px;
-  color:white; 
+  color: white; 
   margin-top: 0px;
-  margin-right: 10%;
+  /*margin-right: 10%;*/
   padding-top: 0px;
 
 }
