@@ -28,6 +28,12 @@ a
   text-decoration: none;
   color: white;
   transition: color 0.3s ease;
+  display: inline;
+  padding-left: 50px;
+}
+
+li {
+  display: inline;
 }
 
 a:hover
@@ -51,7 +57,7 @@ a:hover
 #menuToggle input
 {
   display: block;
-  width: 40px;
+  width: 30px;
   height: 32px;
   position: absolute;
   top: -7px;
@@ -65,13 +71,11 @@ a:hover
   -webkit-touch-callout: none;
 }
 
-/*
- * Just a quick hamburger
- */
+
 #menuToggle span
 {
   display: block;
-  width: 33px;
+  width: 30px;
   height: 4px;
   margin-bottom: 5px;
   position: relative;
@@ -133,8 +137,8 @@ a:hover
 #menu
 {
   position: absolute;
-  width: 300px;
-  margin: -100px 0 0 -70px;
+  width: 800px;
+  margin: -175px 0 0 50px;
   padding: 50px;
   padding-top: 125px;
   
@@ -144,7 +148,7 @@ a:hover
   /* to stop flickering of text in safari */
   
   transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
+  transform: translate(0,-20%);
   
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
