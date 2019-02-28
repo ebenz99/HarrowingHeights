@@ -1,107 +1,164 @@
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+
 body {
-	margin: 0;
-	background: #222;
-	font-family: 'Work Sans', sans-serif;
-	font-weight: 800;
+  background-size: cover;
+  background-image:url("mountains.png");
 }
-
-.container {
-  margin: 0px;
-  padding-bottom:0px;
-}
-
-header {
-  background: #98b7d6;
-}
-
-header::after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
-.logo {
-  float: left;
-  padding: 10px 0;
-}
-
-nav {
-  float: center;
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-nav li {
-  display: inline-block;
-  text-align: center;
-  padding-top: 23px;
-  width: 10%;
-  margin-left: 12%;
-  position: relative;
-}
-
-nav a {
-  color: #444;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 14px;
-}
-
-nav a:hover {
-  color: #000;
-}
-
-nav a::before {
-  content: '';
-  display: block;
-  height: 5px;
-  background-color: #444;
-
-  position: absolute;
-  top: 0;
-  width: 0%;
-
-  transition: all ease-in-out 250ms;
-}
-
-nav a:hover::before {
-  width: 100%;
-}
-
 div.restOfPage {
-  float: top;
   height: 100%;
-  background-image:url("scroller.gif");
+  top:0px;
   background-repeat: no-repeat;
-  margin-left: 10%;
 }
 
 p {
   text-align: center;
-  font-family: 'Work Sans', sans-serif;
-  font-size: 50px;
-  height: 50px;
+  font-family: 'Shadows Into Light';
+  font-size: 100px;
   position: relative;
   top: 100px;
-  color:white; 
+  color: white; 
   margin-top: 0px;
-  margin-right: 10%;
-  padding-top: 0px;
+  /*margin-right: 10%;*/
 
 }
 
-/*div.bar {
-  background-color: #222;
-  text-align: center;
-  font-family: 'Work Sans', sans-serif;
-  font-size: 50px;
-  height: 50px;
+a
+{
+  font-family: 'Shadows Into Light';
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+a:hover
+{
+  color: e8993c;
+}
+
+#menuToggle
+{
+  display: block;
   position: relative;
-  top: 100px;
-  color:white; 
-}*/
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -70px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: transparent;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
