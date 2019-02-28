@@ -1,5 +1,6 @@
-#Mechanistic Pan-Cancer Model#
-##Palmetto Instructions##
+# Mechanistic Pan-Cancer Model #
+## Palmetto Instructions ##
+
 To run this workflow as a PBS script, start by running the following commands:
 
 1. Load python3 by adding the command 'module add python/3.4'
