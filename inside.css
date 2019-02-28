@@ -138,7 +138,7 @@ a:hover
 {
   position: absolute;
   width: 800px;
-  margin: -175px 0 0 50px;
+  margin: -150px 0 0 50px;
   padding: 50px;
   padding-top: 125px;
   
@@ -148,7 +148,7 @@ a:hover
   /* to stop flickering of text in safari */
   
   transform-origin: 0% 0%;
-  transform: translate(0,-20%);
+  transform: translate(0,-90px);
   
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
