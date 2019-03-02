@@ -3,12 +3,13 @@
 </head>
 <body>
 <script>
-  function diffImage(img) 
+  function diffImage(name) 
   {
-    img.src = "HHGrillMenu_V01_JI20190228.png";
+    console.log("hi")
+    document.getElementById('mymenu').src = name;
   }
 </script>    
-<link rel="stylesheet" href="inside.css">
+<link rel="stylesheet" href="restaurants.css">
           <div id="menuToggle">
             <input type="checkbox" />
             <span></span>
@@ -24,27 +25,52 @@
           </div>
     <div class="restOfPage">
         <div class="bar">
-            <p>Welcome To Harrowing Heights!</p>
+            <p>Restaurants</p>
         </div>
     </div>
 
 <div style="width:100%;">
 
-<div style="float:left; width:30%; height:320px; overflow:auto;">
-    <p>items</p>
-    <p>items</p>
-    <p>items</p>
-    <p>items</p>
-    <p>items</p>
-    <p>items</p>
-    <p>items</p>
-    <p>items</p>
-    <p>items</p>
-    <p>items</p>
+<div style="float:left; width:30%; height:700px; overflow:auto;">
+    <ul class="rest">
+              <a href="javascript:diffImage('HHGrillMenu_V01_JI20190228.png');" class="rest"><li>Harrowing Heights Grill</li></a><br>
+              <a class="rest"><li>Chic-Fil-A</li></a><br>
+              <a class="rest"><li>Placeholder</li></a><br>
+              <a class="rest"><li>Placeholder</li></a><br>
+              <a class="rest"><li>Placeholder</li></a><br>
+              <a class="rest"><li>Placeholder</li></a><br>
+              <a class="rest"><li>Placeholder</li></a><br>
+              <a class="rest"><li>Placeholder</li></a><br>
+              <a class="rest"><li>Placeholder</li></a><br>
+              <a class="rest"><li>Placeholder</li></a><br>
+              <a class="rest"><li>Placeholder</li></a><br>
+              <a class="rest"><li>Placeholder</li></a><br>
+              <a class="rest"><li>Placeholder</li></a><br>
+              <a class="rest"><li>Placeholder</li></a><br>
+              <a class="rest"><li>Placeholder</li></a><br>
+              <a class="rest"><li>Placeholder</li></a><br>
+              <a class="rest"><li>Placeholder</li></a><br>
+              <a class="rest"><li>Placeholder</li></a><br>
+              <a class="rest"><li>Placeholder</li></a><br>
+              <a class="rest"><li>Placeholder</li></a><br>
+              <a class="rest"><li>Placeholder</li></a><br>
+              <a class="rest"><li>Placeholder</li></a><br>
+              <a class="rest"><li>Placeholder</li></a><br>
+              <a class="rest"><li>Placeholder</li></a><br>
+              <a class="rest"><li>Placeholder</li></a><br>
+              <a class="rest"><li>Placeholder</li></a><br>
+              <a class="rest"><li>Placeholder</li></a><br>
+              <a class="rest"><li>Placeholder</li></a><br>
+              <a class="rest"><li>Placeholder</li></a><br>
+              <a class="rest"><li>Placeholder</li></a><br>
+              <a class="rest"><li>Placeholder</li></a><br>
+              <a class="rest"><li>Placeholder</li></a><br>
+              <a class="rest"><li>Placeholder</li></a><br>
+    </ul>
 </div>
-<div style="float:right; width:70%">
+<div style="float:right; width:70%; height: 1000px">
     <div class="menuImage">
-        <img src="mountains.png"></img>
+        <img id="mymenu" src="mountains.png"></img>
     </div>
 </div>
 </div>
