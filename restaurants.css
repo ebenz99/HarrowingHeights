@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+@import url('https://fonts.googleapis.com/css?family=Antic');
 
 body {
-  background:url("mountains.png") no-repeat center center fixed;
+  background:url("triceratops.png") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -10,7 +11,7 @@ body {
 
 
 div.restOfPage {
-  height: 100%;
+  height: 500px;
   top:0px;
   background-repeat: no-repeat;
 }
@@ -170,4 +171,28 @@ a:hover
 #menuToggle input:checked ~ ul
 {
   transform: none;
+}
+
+#mymenu {
+  width:  70%;
+  display:  block;
+  margin-left:  21%;
+}
+
+li.rest {
+  color:white;
+  display:  inline;
+}
+
+a.rest {
+  white-space: pre-wrap;
+  color: white;  
+  font-family: 'Antic';
+  font-size: 23px;
+  display: inline;
+  margin-bottom: 10px;
+}
+
+a.rest:hover {
+  color:orange;
 }
