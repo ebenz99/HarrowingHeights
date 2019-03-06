@@ -177,6 +177,7 @@ a:hover
   width:  70%;
   display:  block;
   margin-left:  21%;
+  opacity: 0;
 }
 
 li.rest {
