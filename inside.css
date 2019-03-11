@@ -53,13 +53,11 @@ a.dropdown:hover ~ #dropdown-content{
   display: block;
 }
 
-a.dropdown:hover #dropdown-content{  
-  transform: translate(0px,10px);
-}
 
 a.dropdown:hover{ 
   color: e8993c;
 }
+
 
 a.notdropdown{ 
   padding-bottom: 10%;
@@ -69,9 +67,7 @@ a.dropdown{
   padding-bottom: 5%;
 }
 
-#dropdown-content:hover ~ #dropdown{
-  color: e8993c;
-}
+
 
 #dropdown-content:hover{  
   display: block;
@@ -220,10 +216,10 @@ a.dropdown{
   text-decoration: none;
   color: white;
   transition: color 1s ease;
+  transition: transform 1s ease;
   display: inline;
   padding-left: 80px;
   background: transparent;
-  transition: all 1s;
 }
 
 #ddtext:hover {

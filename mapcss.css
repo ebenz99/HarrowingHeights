@@ -2,11 +2,13 @@
 @import url('https://fonts.googleapis.com/css?family=Antic');
 
 body {
-  background:url("parkabove.png") no-repeat center center fixed;
+  background:url("parkabove.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  padding: 0px;
+  margin:   0px;
 }
 
 
@@ -101,7 +103,7 @@ a.dropdown{
   margin-bottom: 5px;
   position: relative;
   
-  background: #cdcdcd;
+  background: white;
   border-radius: 3px;
   
   z-index: 1;
@@ -239,8 +241,10 @@ p.bigtext {
   font-size: 100px;
   position: relative;
   top: 150px;
-  color: white; 
+  color: e8993c;
   margin-top: 0px;
+  background-color: white;
+  width: 100%;
   /*margin-right: 10%;*/
 
 }
@@ -256,4 +260,15 @@ img {
   padding-top:  150px;
   display:  block;
   margin-left:  25%;
+}
+
+button.mybutton {
+  color:white;
+  background-color:  black;
+  display:  inline;
+  margin-left: 12%;
+  margin-right: 12%;
+  height:  50px;
+  width:100px;
+  border-radius:  20px;
 }
