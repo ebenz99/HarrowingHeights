@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Antic');
 
 body {
-  background:url("parkabove.jpg") no-repeat center center fixed;
+  background:url("triceratops.png") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -214,7 +214,7 @@ a.dropdown{
 }
 
 #ddtext:hover {
-  color: e8993c;
+  color: #e8993c;
 }
 
 li.rest {
@@ -252,23 +252,41 @@ p.bigtext {
 .map {
   padding-top:  100px;
   align-content:  center;
-  padding-bottom:   100px;
+  padding-bottom:   120px;
 }
 
 img {
   width:  50%;
-  padding-top:  150px;
+  padding-top:  100px;
   display:  block;
   margin-left:  25%;
 }
 
 button.mybutton {
   color:white;
-  background-color:  black;
+  background-color: #e8993c;
+  width:100px;
+  border-radius:  20px;
+  border: 2px solid #e8993c;
+  height:  50px;
+}
+
+button.mybutton:hover {
+  transition: color .5s ease;
+  transition: background-color .5s ease;
+  color: #e8993c;
+  cursor: pointer;
+  background-color: white;
+  width:100px;
+  border-radius:  20px;
+  border: 2px solid #e8993c;
+  height:  50px;
+}
+
+div.buttoncontainer {
   display:  inline;
   margin-left: 12%;
   margin-right: 12%;
-  height:  50px;
-  width:100px;
-  border-radius:  20px;
+  height:  100px;
+
 }
