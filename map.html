@@ -9,22 +9,35 @@
 		    <span></span>
 		    <span></span>
 		    <ul id="menu">
-		      <a href="index.html"><li>Home</li></a>
-		      <a href="#"><li>About</li></a>
-		      <a href="#"><li>Info</li></a>
-		      <a href="map.html"><li>Map</li></a>
-		      <a href="login.html" target="_blank"><li>Employee Page</li></a>
+		      <a href="index.html" class="notdropdown"><li>Home</li></a>
+		      <a href="#" class="dropdown"><li>Attractions</li></a>
+			  <div id="dropdown-content">
+			  	<a href="animals.html"> <p id="ddtext">Animals</p></a><br>
+			  	<a href="restaurants.html"> <p id="ddtext">Restaurants</p></a><br>
+			  	<a href="rides.html"> <p id="ddtext">Rides</p></a><br>
+			  </div>
+		      <a href="map.html" class="notdropdown"><li>Maps</li></a>
+		      <a href="tickets.html" class="notdropdown"><li>Tickets</li></a>
+		      <a href="login.html" target="_blank" class="notdropdown"><li>Employee Page</li></a>
 		    </ul>
 		  </div>
 	<div class="restOfPage">
 		<div class="bar">
-			<p>Maps</p>
+			<p class="bigtext">Maps</p>
 		</div>
 		<div class="map">
-			<img src="AnimalLayoutMap_V01_MP20190226-1.png">
+			<img src="topoMap.png">
 		</div>
-		<div class="map">
-			<img src="CartoonLayoutMap_V01_JM20190225.png">
-		</div>
+		<ul id="maptype">
+			<div class="buttonContainer">
+              <button onclick="location.href='animals.html'" class="mybutton"><li>Animals</li></button>
+          </div>
+		<div class="buttonContainer">
+              <button href="restuarants.html" class="mybutton"><li>Restaurants</li></button>
+          </div>
+		<div class="buttonContainer">
+              <button href="rides.html" class="mybutton"><li>Rides</li></button>
+          </div>
+        </ul>
 	</div>
 </body>

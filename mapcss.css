@@ -1,34 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+@import url('https://fonts.googleapis.com/css?family=Antic');
 
 body {
-  background:url("parkabove.jpg") no-repeat center center fixed;
+  background:url("triceratops.png") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  padding: 0px;
+  margin:   0px;
 }
 
+
 div.restOfPage {
-  height: 100%;
+  height: 500px;
   top:0px;
   background-repeat: no-repeat;
 }
 
-p {
-  text-align: center;
-  font-family: 'Shadows Into Light';
-  font-size: 100px;
-  position: relative;
-  margin-left:  -100px;
-  top: 100px;
-  /*background-image: linear-gradient(to right, white 50%, orange);*/
-  background-color:  #e8993c;
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  margin-top: 0px;
-  padding-bottom:   100px;
-}
+
 
 a
 {
@@ -42,11 +32,36 @@ a
 
 li {
   display: inline;
+
 }
 
-a:hover
+a.notdropdown:hover
 {
   color: e8993c;
+}
+
+a.dropdown:hover ~ #dropdown-content{  
+  display: block;
+}
+
+
+a.dropdown:hover{ 
+  color: e8993c;
+}
+
+
+a.notdropdown{ 
+  padding-bottom: 10%;
+}
+
+a.dropdown{ 
+  padding-bottom: 5%;
+}
+
+
+
+#dropdown-content:hover{  
+  display: block;
 }
 
 #menuToggle
@@ -147,7 +162,6 @@ a:hover
   position: absolute;
   width: 800px;
   margin: -160px 0 0 50px;
-  padding: 50px;
   padding-top: 125px;
   
   background: transparent;
@@ -175,14 +189,104 @@ a:hover
   transform: none;
 }
 
+#dropdown-content {
+  display: none;
+  position: absolute;
+  margin-top: -10px;
+  background-color: transparent;
+  padding: 12px 16px;
+  z-index: 1;
+
+  -webkit-font-smoothing: antialiased;
+  transition: all 1s;
+
+}
+
+#ddtext {
+  font-family: 'Shadows Into Light';
+  text-decoration: none;
+  color: white;
+  transition: color 1s ease;
+  transition: transform 1s ease;
+  display: inline;
+  padding-left: 80px;
+  background: transparent;
+}
+
+#ddtext:hover {
+  color: #e8993c;
+}
+
+li.rest {
+  color:white;
+  display:  inline;
+}
+
+a.rest {
+  white-space: pre-wrap;
+  color: white;  
+  font-family: 'Antic';
+  font-size: 23px;
+  display: inline;
+  margin-bottom: 10px;
+}
+
+a.rest:hover {
+  color:orange;
+}
+
+p.bigtext {
+  text-align: center;
+  font-family: 'Shadows Into Light';
+  font-size: 100px;
+  position: relative;
+  top: 150px;
+  color: e8993c;
+  margin-top: 0px;
+  background-color: white;
+  width: 100%;
+  /*margin-right: 10%;*/
+
+}
+
 .map {
   padding-top:  100px;
   align-content:  center;
-  padding-bottom:   100px;
+  padding-bottom:   120px;
 }
 
 img {
   width:  50%;
+  padding-top:  100px;
   display:  block;
-  margin-left:  21%;
+  margin-left:  25%;
+}
+
+button.mybutton {
+  color:white;
+  background-color: #e8993c;
+  width:100px;
+  border-radius:  20px;
+  border: 2px solid #e8993c;
+  height:  50px;
+}
+
+button.mybutton:hover {
+  transition: color .5s ease;
+  transition: background-color .5s ease;
+  color: #e8993c;
+  cursor: pointer;
+  background-color: white;
+  width:100px;
+  border-radius:  20px;
+  border: 2px solid #e8993c;
+  height:  50px;
+}
+
+div.buttoncontainer {
+  display:  inline;
+  margin-left: 12%;
+  margin-right: 12%;
+  height:  100px;
+
 }

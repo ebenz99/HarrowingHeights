@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
-@import url('https://fonts.googleapis.com/css?family=Antic');
 
 body {
-  background:url("triceratops.png") no-repeat center center fixed;
+  background:url("mountains.png") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -11,12 +10,22 @@ body {
 
 
 div.restOfPage {
-  height: 500px;
+  height: 100%;
   top:0px;
   background-repeat: no-repeat;
 }
 
+p.bigtext {
+  text-align: center;
+  font-family: 'Shadows Into Light';
+  font-size: 100px;
+  position: relative;
+  top: 100px;
+  color: white; 
+  margin-top: 0px;
+  /*margin-right: 10%;*/
 
+}
 
 a
 {
@@ -25,7 +34,9 @@ a
   color: white;
   transition: color 0.3s ease;
   display: inline;
-  padding-left: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
+  /*padding-bottom: 100px;*/
 }
 
 li {
@@ -42,11 +53,13 @@ a.dropdown:hover ~ #dropdown-content{
   display: block;
 }
 
+a.dropdown:hover #dropdown-content{  
+  transform: translate(0px,10px);
+}
 
 a.dropdown:hover{ 
   color: e8993c;
 }
-
 
 a.notdropdown{ 
   padding-bottom: 10%;
@@ -56,7 +69,9 @@ a.dropdown{
   padding-bottom: 5%;
 }
 
-
+#dropdown-content:hover ~ #dropdown{
+  color: e8993c;
+}
 
 #dropdown-content:hover{  
   display: block;
@@ -205,42 +220,12 @@ a.dropdown{
   text-decoration: none;
   color: white;
   transition: color 1s ease;
-  transition: transform 1s ease;
   display: inline;
   padding-left: 80px;
   background: transparent;
+  transition: all 1s;
 }
 
 #ddtext:hover {
   color: e8993c;
-}
-
-li.rest {
-  color:white;
-  display:  inline;
-}
-
-a.rest {
-  white-space: pre-wrap;
-  color: white;  
-  font-family: 'Antic';
-  font-size: 23px;
-  display: inline;
-  margin-bottom: 10px;
-}
-
-a.rest:hover {
-  color:orange;
-}
-
-p.bigtext {
-  text-align: center;
-  font-family: 'Shadows Into Light';
-  font-size: 100px;
-  position: relative;
-  top: 150px;
-  color: white; 
-  margin-top: 0px;
-  /*margin-right: 10%;*/
-
 }
