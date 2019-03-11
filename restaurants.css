@@ -16,17 +16,7 @@ div.restOfPage {
   background-repeat: no-repeat;
 }
 
-p {
-  text-align: center;
-  font-family: 'Shadows Into Light';
-  font-size: 100px;
-  position: relative;
-  top: 100px;
-  color: white; 
-  margin-top: 0px;
-  /*margin-right: 10%;*/
 
-}
 
 a
 {
@@ -40,11 +30,36 @@ a
 
 li {
   display: inline;
+
 }
 
-a:hover
+a.notdropdown:hover
 {
   color: e8993c;
+}
+
+a.dropdown:hover ~ #dropdown-content{  
+  display: block;
+}
+
+
+a.dropdown:hover{ 
+  color: e8993c;
+}
+
+
+a.notdropdown{ 
+  padding-bottom: 10%;
+}
+
+a.dropdown{ 
+  padding-bottom: 5%;
+}
+
+
+
+#dropdown-content:hover{  
+  display: block;
 }
 
 #menuToggle
@@ -145,7 +160,6 @@ a:hover
   position: absolute;
   width: 800px;
   margin: -160px 0 0 50px;
-  padding: 50px;
   padding-top: 125px;
   
   background: transparent;
@@ -173,11 +187,32 @@ a:hover
   transform: none;
 }
 
-#mymenu {
-  width:  70%;
-  display:  block;
-  margin-left:  21%;
-  opacity: 0;
+#dropdown-content {
+  display: none;
+  position: absolute;
+  margin-top: -10px;
+  background-color: transparent;
+  padding: 12px 16px;
+  z-index: 1;
+
+  -webkit-font-smoothing: antialiased;
+  transition: all 1s;
+
+}
+
+#ddtext {
+  font-family: 'Shadows Into Light';
+  text-decoration: none;
+  color: white;
+  transition: color 1s ease;
+  transition: transform 1s ease;
+  display: inline;
+  padding-left: 80px;
+  background: transparent;
+}
+
+#ddtext:hover {
+  color: e8993c;
 }
 
 li.rest {
@@ -196,4 +231,16 @@ a.rest {
 
 a.rest:hover {
   color:orange;
+}
+
+p.bigtext {
+  text-align: center;
+  font-family: 'Shadows Into Light';
+  font-size: 100px;
+  position: relative;
+  top: 150px;
+  color: white; 
+  margin-top: 0px;
+  /*margin-right: 10%;*/
+
 }
