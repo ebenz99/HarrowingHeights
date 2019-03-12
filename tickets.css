@@ -20,9 +20,11 @@ p.bigtext {
   font-family: 'Shadows Into Light';
   font-size: 100px;
   position: relative;
-  top: 100px;
-  color: white; 
+  top: 175px;
+  color: e8993c;
   margin-top: 0px;
+  background-color: white;
+  width: 100%;
   /*margin-right: 10%;*/
 
 }
@@ -107,6 +109,9 @@ a.dropdown{
   -webkit-touch-callout: none;
 }
 
+#holder {
+  position: fixed;
+}
 
 #menuToggle span
 {

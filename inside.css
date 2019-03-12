@@ -73,6 +73,10 @@ a.dropdown{
   display: block;
 }
 
+#holder {
+  position: fixed;
+}
+
 #menuToggle
 {
   display: block;
