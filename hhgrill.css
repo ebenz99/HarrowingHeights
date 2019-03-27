@@ -34,6 +34,17 @@ body {
   font-size: 20px;
 }
 
+.menu {
+  height: 800px;
+  width: 100%;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #leftholder {
   display: block;
   float:left;
@@ -54,11 +65,12 @@ body {
 }
 
 #rightholder {
+  margin-top: 1%;
   display: block;
   padding-left: 5%;
   float:left;
   width: 30%;
-  height: var(--myheight);
+  height: 386px;
   background-color: white;
   line-height: 50%;
 }
