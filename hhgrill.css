@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+@import url('https://fonts.googleapis.com/css?family=Antic');
+
+:root {
+  --myheight: 400px;
+}
+
+body {
+  background:url("exoticrestaurant.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.textHolder {
+  background-color: white;
+  height: var(--myheight);
+}
+
+.breaker {
+  height: 300px;
+}
+
+.innerTitle {
+  text-align: center;
+  font-family: 'Antic';
+  font-size: 30px;
+}
+
+.text {
+  text-align: left;
+  font-family: 'Antic';
+  font-size: 20px;
+}
+
+.menu {
+  height: 800px;
+  width: 100%;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#leftholder {
+  display: block;
+  float:left;
+  width: 50%;
+  height: var(--myheight);
+  background-color: white;
+  padding-left:5%;
+  padding-right: 5%;
+}
+
+#middleholder {
+  display: block;
+  float:left;
+  width: .25%;
+  height: 320px;
+  margin-top: 40px;
+  background-color: gray;
+}
+
+#rightholder {
+  margin-top: 1%;
+  display: block;
+  padding-left: 5%;
+  float:left;
+  width: 30%;
+  height: 386px;
+  background-color: white;
+  line-height: 50%;
+}
+
+#titleblock {
+  height: 200px;
+  background-color: 200px;
+}
+
+#title {
+  font-family: 'Shadows Into Light';
+  text-align: center;
+  padding-top: 80px;
+  color: white;
+  font-size: 50px;
+}
