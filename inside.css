@@ -20,7 +20,7 @@ p.bigtext {
   font-family: 'Shadows Into Light';
   font-size: 100px;
   position: relative;
-  top: 100px;
+  top: 175px;
   color: white; 
   margin-top: 0px;
   /*margin-right: 10%;*/
@@ -53,11 +53,13 @@ a.dropdown:hover ~ #dropdown-content{
   display: block;
 }
 
+a.dropdown:hover #dropdown-content{  
+  transform: translate(0px,10px);
+}
 
 a.dropdown:hover{ 
   color: e8993c;
 }
-
 
 a.notdropdown{ 
   padding-bottom: 10%;
@@ -67,14 +69,12 @@ a.dropdown{
   padding-bottom: 5%;
 }
 
-
+#dropdown-content:hover ~ #dropdown{
+  color: e8993c;
+}
 
 #dropdown-content:hover{  
   display: block;
-}
-
-#holder {
-  position: fixed;
 }
 
 #menuToggle
