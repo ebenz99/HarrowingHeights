@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+@import url('https://fonts.googleapis.com/css?family=Antic');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 
 body {
   background:url("mountains.png") no-repeat center center fixed;
@@ -21,10 +23,11 @@ p.bigtext {
   font-size: 100px;
   position: relative;
   top: 175px;
-  color: e8993c;
+  /*color: e8993c;*/
+  color: black;
   margin-top: 0px;
   background-color: white;
-  width: 100%;
+  /*width: 100%;*/
   /*margin-right: 10%;*/
 
 }
@@ -233,4 +236,30 @@ a.dropdown{
 
 #ddtext:hover {
   color: e8993c;
+}
+
+#ticket {
+  display: block;
+  float:left;
+  height: 270px;
+  margin-top: 140px;
+  font-family: 'Josefin Sans';
+  width: 15%;
+  margin-left: 13.5%;
+  margin-bottom: 200px;
+  background-color:white;
+}
+
+.passTitle {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 22px;
+}
+
+.desc {
+  text-align: left;
+  font-size: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+
 }
