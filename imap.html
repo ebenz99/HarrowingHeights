@@ -56,24 +56,42 @@
       <!-- Javascript -->
       <script>
          $(function() {
-            $( "#dialog-1" ).dialog({
+            $( "#waterdialog" ).dialog({
                autoOpen: false,  
             });
-            $( "#opener" ).click(function() {
-               $( "#dialog-1" ).dialog( "open" );
+            $( "#pettingdialog" ).dialog({
+               autoOpen: false,  
+            });
+            $( "#grassdialog" ).dialog({
+               autoOpen: false,  
+            });
+            $( "#waterOpener" ).click(function() {
+               $( "#waterdialog" ).dialog( "open" );
+            });
+            $( "#pettingOpener" ).click(function() {
+               $( "#pettingdialog" ).dialog( "open" );
+            });
+            $( "#grassOpener" ).click(function() {
+               $( "#grassdialog" ).dialog( "open" );
             });
          });
       </script>
    </head>
    
    <body>
-	<link rel="stylesheet" href="imap.css">
+  <link rel="stylesheet" href="imap.css">
       <!-- HTML --> 
-	  <img src="animalMap.png" width="100%" height="100%" alt="a map" usemap="#animalsmap">
-      <div id = "dialog-1" 
-         title = "Dialog Title goes here...">This my first jQuery UI Dialog!</div>
+    <img src="animalMap.png" width="100%" height="100%" alt="a map" usemap="#animalsmap">
+      <div id = "waterdialog" 
+         title = "The Water Area">Watch out for sharks and the Loch Ness Monster.</div>
+      <div id = "pettingdialog" 
+         title = "The Petting Zoo">This area is for our fuzzier and nicer monsters.</div>
+      <div id = "grassdialog" 
+         title = "The Grassy Area">Watch out for the T-Rex's!</div>
       <map name="animalsmap">
-	    <area id="opener" shape="rect" coords="0,0,1000,1000" href="https://www.w3schools.com/tags/att_usemap.asp" alt="alttext">
-	</map>
+      <area id="waterOpener" shape="rect" coords="0,0,500,500" alt="alttext">
+      <area id="pettingOpener" shape="rect" coords="500,500,1000,1000" alt="alttext">
+      <area id="grassOpener" shape="rect" coords="0,500,500,1000" alt="alttext">
+  </map>
    </body>
 </html>
