@@ -1,0 +1,79 @@
+<!--<link rel="icon" href="untitledLogo.png">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Dialog - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#dialog" ).dialog();
+  } );
+  </script>
+</head>
+<script>
+  function diffImage(section) 
+  {
+  	if(section==1){
+    	document.getElementById('mymenu').src = name;
+    	document.getElementById('mymenu').style.opacity = 1;
+  	}
+  }
+</script>  
+
+
+<body>
+	<link rel="stylesheet" href="imap.css">
+	<img src="animalMap.png" width="100%" height="100%" alt="a map" usemap="#animalsmap">
+	<map name="animalsmap">
+	    <area shape="rect" coords="0,0,1000,1000" href="https://www.w3schools.com/tags/att_usemap.asp" alt="alttext">
+	</map>
+</body>-->
+
+
+<!doctype html>
+<html lang = "en">
+   <head>
+      <meta charset = "utf-8">
+      <title>jQuery UI Dialog functionality</title>
+      <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+      
+      <!-- CSS -->
+      <style>
+         .ui-widget-header,.ui-state-default, ui-button {
+            background:#b9cd6d;
+            border: 1px solid #b9cd6d;
+            color: #FFFFFF;
+            font-weight: bold;
+         }
+      </style>
+      
+      <!-- Javascript -->
+      <script>
+         $(function() {
+            $( "#dialog-1" ).dialog({
+               autoOpen: false,  
+            });
+            $( "#opener" ).click(function() {
+               $( "#dialog-1" ).dialog( "open" );
+            });
+         });
+      </script>
+   </head>
+   
+   <body>
+	<link rel="stylesheet" href="imap.css">
+      <!-- HTML --> 
+	  <img src="animalMap.png" width="100%" height="100%" alt="a map" usemap="#animalsmap">
+      <div id = "dialog-1" 
+         title = "Dialog Title goes here...">This my first jQuery UI Dialog!</div>
+      <map name="animalsmap">
+	    <area id="opener" shape="rect" coords="0,0,1000,1000" href="https://www.w3schools.com/tags/att_usemap.asp" alt="alttext">
+	</map>
+   </body>
+</html>
