@@ -42,6 +42,10 @@ a.dropdown:hover ~ #dropdown-content{
   display: block;
 }
 
+.menuImage {
+  padding-left: 150px;
+}
+
 
 a.dropdown:hover{ 
   color: e8993c;
