@@ -7,8 +7,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding: 0px;
-  margin:   0px;
+  margin: 0px;
 }
 
 
@@ -16,6 +15,7 @@ div.restOfPage {
   height: 500px;
   top:0px;
   background-repeat: no-repeat;
+  padding: 10px;
 }
 
 
@@ -240,16 +240,16 @@ a.rest:hover {
 }
 
 p.bigtext {
+  color: e8993c;
   text-align: center;
   font-family: 'Shadows Into Light';
   font-size: 100px;
   position: relative;
-  top: 150px;
-  color: e8993c;
+  top: 175px;
+  /*color: e8993c;*/
   margin-top: 0px;
   background-color: white;
-  width: 100%;
-  /*margin-right: 10%;*/
+  margin-bottom: 220px;
 
 }
 
@@ -293,4 +293,23 @@ div.buttoncontainer {
   margin-right: 12%;
   height:  100px;
 
+}
+
+.footerwrapper {
+  text-align: center;
+  font-family: 'Antic';
+  color: white;
+  position: relative;
+  top: 1000px;
+  color: white;
+  margin-top: 0px;
+  background-color: #5B8F82;
+  width: 100%;
+  height: 60px;
+  display: inline-block;
+}
+
+.ctext {
+  text-align: center;
+  font-size: 20px;
 }
