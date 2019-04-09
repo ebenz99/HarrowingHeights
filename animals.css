@@ -204,9 +204,6 @@ a.dropdown{
 
 }
 
-#mymenu {
-  padding-left: 25%;
-}
 
 #ddtext {
   font-family: 'Shadows Into Light';
@@ -225,14 +222,27 @@ a.dropdown{
 
 li.rest {
   color:white;
+  display: inline;
+}
+
+ul.rest{
+    list-style: none;
+    padding-left: 0;
+}
+
+.list-Heading{
+  color:white;
   display:  inline;
+  text-decoration: underline;
+  font-family: 'Antic';
+  font-size: 23px;
+  padding-left: 20px;
 }
 
 a.rest {
-  white-space: pre-wrap;
   color: white;  
   font-family: 'Antic';
-  font-size: 23px;
+  font-size: 18px;
   display: inline;
   margin-bottom: 10px;
 }
@@ -270,4 +280,19 @@ p.bigtext {
 .ctext {
   text-align: center;
   font-size: 20px;
+}
+
+.list-heading {
+  font-weight: normal;
+}
+
+.category {
+  width:40%;
+  float: left;
+  display: block;
+  margin-left: 5%;
+}
+
+.menuImage {
+  padding-left: 10px;
 }

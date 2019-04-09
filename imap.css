@@ -5,3 +5,5 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
+
+area {border: 1px solid red;}

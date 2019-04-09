@@ -1,38 +1,3 @@
-<!--<link rel="icon" href="untitledLogo.png">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>jQuery UI Dialog - Default functionality</title>
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script>
-  $( function() {
-    $( "#dialog" ).dialog();
-  } );
-  </script>
-</head>
-<script>
-  function diffImage(section) 
-  {
-  	if(section==1){
-    	document.getElementById('mymenu').src = name;
-    	document.getElementById('mymenu').style.opacity = 1;
-  	}
-  }
-</script>  
-
-
-<body>
-	<link rel="stylesheet" href="imap.css">
-	<img src="animalMap.png" width="100%" height="100%" alt="a map" usemap="#animalsmap">
-	<map name="animalsmap">
-	    <area shape="rect" coords="0,0,1000,1000" href="https://www.w3schools.com/tags/att_usemap.asp" alt="alttext">
-	</map>
-</body>-->
-
-
 <!doctype html>
 <html lang = "en">
    <head>
@@ -47,8 +12,11 @@
          .ui-widget-header,.ui-state-default, ui-button {
             background:#b9cd6d;
             border: 1px solid #b9cd6d;
-            color: #FFFFFF;
+            color: black;
             font-weight: bold;
+         }
+         .ui-widget {
+          background-color: #d9d9d9;
          }
       </style>
       
@@ -64,6 +32,12 @@
             $( "#grassdialog" ).dialog({
                autoOpen: false,  
             });
+            $( "#wilddialog" ).dialog({
+               autoOpen: false,  
+            });
+            $( "#outsidedialog" ).dialog({
+               autoOpen: false,  
+            });
             $( "#waterOpener" ).click(function() {
                $( "#waterdialog" ).dialog( "open" );
             });
@@ -72,6 +46,12 @@
             });
             $( "#grassOpener" ).click(function() {
                $( "#grassdialog" ).dialog( "open" );
+            });
+            $( "#wildOpener" ).click(function() {
+               $( "#wilddialog" ).dialog( "open" );
+            });
+            $( "#outsideOpener" ).click(function() {
+               $( "#outsidedialog" ).dialog( "open" );
             });
          });
       </script>
@@ -82,16 +62,21 @@
       <!-- HTML --> 
     <img src="animalMap.png" width="100%" height="100%" alt="a map" usemap="#animalsmap">
       <div id = "waterdialog" 
-         title = "The Water Area">Watch out for sharks and the Loch Ness Monster.</div>
+         title = "The Water Enclosure">Watch out for sharks and the Loch Ness Monster on our boat excursions!</div>
       <div id = "pettingdialog" 
          title = "The Petting Zoo">This area is for our fuzzier and nicer monsters. Stop by to see chinchillas, monkeys, and more!</div>
       <div id = "grassdialog" 
-         title = "The Grassy Area">Watch out for the T-Rex's!</div>
+         title = "The Grassy Enclosure">Take a safari and keep your eyes open for dinosaurs!</div>
+      <div id = "wilddialog" 
+         title = "The Wild Area">This is unmapped territory! Enter at your own risk!</div>
+      <div id = "outsidedialog" 
+         title = "The Open Ocean">These are unmapped waters! No swimming!</div>
       <map name="animalsmap">
-      <!--<area id="waterOpener" shape="rect" coords="1000,1000,1100,1100" alt="alttext">-->
-      <!--<area id="pettingOpener" shape="rect" coords="410,125,700,460" alt="alttext">-->
       <area id="pettingOpener" shape="poly" coords="410,210,450,370,460,450,670,460,680,400,600,200,500,125,410,210" alt="alttext">
-      <!--<area id="grassOpener" shape="rect" coords="0,500,500,1000" alt="alttext">-->
+      <area id="grassOpener" shape="poly" coords="430,230,450,370,460,450,670,460,660,660,450,840,170,590,430,230" alt="alttext">
+      <area id="waterOpener" shape="poly" coords="480,125,520,125,490,30,50,245,50,740,265,885,460,860,170,590,480,125" alt="alttext">
+      <area id="wildOpener" shape="poly" coords="600,165,990,150,990,400,820,770,580,940,410,830,660,660,670,460,450,370" alt="alttext">
+      <area id="outsideOpener" shape="poly" coords="600,0,600,165,990,150,990,400,820,770,580,940,410,830,265,885,50,740,50,245,490,30,599,165,599,0,0,0,0,1300,1500,1300,1500,0" alt="alttext">
   </map>
    </body>
 </html>
