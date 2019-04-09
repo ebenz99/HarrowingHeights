@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
 @import url('https://fonts.googleapis.com/css?family=Antic');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 
 body {
-  background:url("triceratops.png") no-repeat center center fixed;
+  background:url("imgs/oldmap.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -240,7 +241,7 @@ a.rest:hover {
 }
 
 p.bigtext {
-  color: e8993c;
+  color: black;
   text-align: center;
   font-family: 'Shadows Into Light';
   font-size: 100px;
@@ -253,11 +254,68 @@ p.bigtext {
 
 }
 
-.map {
-  padding-top:  100px;
-  align-content:  center;
-  padding-bottom:   120px;
+.maps {
+  height: 300px;
+  padding-top: 100px;
+  width: 100%;
+  float: left;
 }
+
+.map{
+  width: 50%;
+  display: inline;
+  float: left;
+}
+
+.mapbuttonL {
+  display: inline;
+  float: left;
+  margin-left:40%;
+  background-color: white;
+  border-radius: 20px;
+  height: 100px;
+  color: black;
+  width: 40%;
+  font-size: 20px;
+  font-family: 'Antic';
+  font-style: bold;
+  border-color: black;
+  border-width: 5px;
+  cursor: pointer;
+}
+
+.mapbuttonR {
+  display: inline;
+  float: left;
+  margin-left: 20%;
+  background-color: white;
+  border-radius: 20px;
+  height: 100px;
+  color: black;
+  width: 40%;
+  font-size: 20px;
+  font-family: 'Antic';
+  font-style: bold;
+  border-color: black;
+  border-width: 5px;
+  cursor: pointer;
+}
+
+.mapbuttonL:hover{
+  color: white;
+  background-color: black;
+  border-color: white;
+  -webkit-transition: all .5s;
+}
+
+.mapbuttonR:hover{
+  color: white;
+  background-color: black;
+  border-color: white;
+  -webkit-transition: all .5s;
+}
+
+
 
 img {
   width:  50%;
