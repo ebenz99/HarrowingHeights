@@ -2,6 +2,23 @@
 	<link rel="icon" href="untitledLogo.png">
 </head>
 <body>
+<script>
+  function diffImage(name) 
+  {
+
+    document.getElementById('myticket').style.opacity = 0;
+    console.log("hi")
+    document.getElementById('myticket').src = name;
+    var op = 0.1;  // initial opacity
+    var timer = setInterval(function () {
+        if (op >= 1){
+            clearInterval(timer);
+        }
+        document.getElementById('myticket').style.opacity = op;
+        op = op + 0.1;
+    }, 40);
+  }
+</script> 
 <link rel="stylesheet" href="tickets.css">
 		<div id="holder">
 		  <div id="menuToggle">
@@ -30,21 +47,36 @@
 		<br></br>
 		<div class="ticketsHolder">
 			<div id="ticket">
-				<p class="passTitle">Day Passes</p>
-				<p class="desc">A one day pass good for one individual!</p>
+				<a href="javascript:diffImage('tickets/Bottom.png');" class="myl">
+				<p class="passTitle">One-Day Passes</p>
+				<p class="desc">Worth a day of fun for one individual! Includes access to the water park, petting zoo, and so much more! Also comes with a token for a free meal at any of our vendors.</p>
+				</a>
 			</div>
 			<div id="ticket">
-				<p class="passTitle">Group Passes</p>
-				<p class="desc">Group rates on one-day passes for families of 3 or more!</p>
+				<a href="javascript:diffImage('tickets/Middle.png');" class="myl">
+					<p class="passTitle">All-Access Pass</p>
+					<p class="desc">Access to the concert and opening day festivities! Come see Rihananna and an amazing pyrotechnics display! You won't want to miss this awesome island party!</p>
+					<br></br>
+					<br></br>
+					<br></br>
+				</a>
 			</div>
-			<div id="ticket">
-				<p class="passTitle">Season Passes</p>
-				<p class="desc">Good from March until August! Includes 10 fast passes.</p>
-			</div>
+				<div id="ticket">
+					<a href="javascript:diffImage('tickets/Top.png');" class="myl">
+						<p class="passTitle">Season Passes</p>
+						<p class="desc">All the benefits of the all-access pass, plus another day of fun in the park! Comes with two additional meal tokens and three roller coaster fast passes!</p>
+						<br></br>
+						<br></br>
+						<br></br>
+					</a>
+				</div>
 		</div>
 	</div>
 	<br></br>
 	<br></br>
+	<div class="container">
+        <img id="myticket" src=""></img>
+	</div>
 	<br></br>
 	<br></br>
 	<div class="footerwrapper">
