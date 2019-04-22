@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Antic');
 
 body {
-  background:url("imgs/white.jpg") no-repeat center center fixed;
+  background:url("backgrounds/white.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -285,6 +285,7 @@ p.bigtext {
   margin-top: 0px;
   height: 250px;
 }
+
 
 img {
   margin-left: auto;
