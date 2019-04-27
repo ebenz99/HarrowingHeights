@@ -22,3 +22,7 @@ Github Pages only provides static pages for the sites it hosts. To circumvent th
 ## Reflection
 
 I feel like this was a really great class for me. Especially after it became more in the hands of the admins, I really appreciated the responsibility of being able to handle the direction of the site. Keeping everything running smoothly required being pretty proactive and communicative with the teams. Honestly, while I prefer agile software development, implementing it with this project was tough, because documents/videos would come in later than I needed them and I would have to scramble to get stuff on the site. Despite this, I would maintain that this project has been an awesome experience. I went from 0 HTML and CSS expertise to feeling like I have a healthy knowledge base in both languages, which was my personal goal for the course and a valuable skill to have in my field.
+
+Thanks for a great semester Mr. Russo!
+
+P.S. - Thanks also for sending me that article about esoteric coding languages. I've actually started getting into a couple of them for fun--some of it is in my "Eso-Lang" repository.
